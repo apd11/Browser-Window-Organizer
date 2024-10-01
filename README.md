@@ -7,7 +7,7 @@ This Project automates the opening, closing, and repositioning of brower windows
   - press **ctrl + shift + q** to close all three browser windows
 
 - **Window Positioning**
-  - Automatic screen size detection
+  - Automatic display size detection
   - One large window of the left half of the screen
   - two smaller windows stacked to fill the right half of the screen
   
