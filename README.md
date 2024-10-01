@@ -3,8 +3,8 @@ This Project automates the opening, closing, and repositioning of brower windows
 
 ## Features
 - **Hotkey based window management**
-  - Press ctrl + q to open three browser windows
-  - press ctrl + shift + q to close all three browser windows
+  - Press **ctrl + q** to open three browser windows
+  - press **ctrl + shift + q** to close all three browser windows
 
 - **Window Positioning**
   - Automatic screen size detection
