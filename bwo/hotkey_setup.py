@@ -1,3 +1,4 @@
+import threading
 import time
 import keyboard
 from chrome_utility import open_in_chrome, close_windows
@@ -11,5 +12,13 @@ def create_hotkey(urls):
     keyboard.add_hotkey('ctrl+q', lambda: open_windows(urls))
     keyboard.add_hotkey('ctrl+shift+q', close_windows)
 
+def setup_hotkeys(urls):
+    # Start the hotkey listener in a separate thread
+    listener_thread = threading.Thread(target=create_hotkey, args=(urls,), daemon=True)
+    listener_thread.start()
+
+    keyboard.wait()
+    '''
     while True:
         time.sleep(1)
+        '''
