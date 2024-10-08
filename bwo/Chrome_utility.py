@@ -32,7 +32,7 @@ def open_in_chrome(urls):
     if chrome_path:
         for url in urls:
             subprocess.Popen([chrome_path, '--new-window', url])
-           # browser.open_new(url)
+           
     else:
         print("Google Chrome not found. Please install it or specify the path manually.")
 
