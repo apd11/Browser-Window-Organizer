@@ -1,6 +1,6 @@
 import time
 import keyboard
-from Chrome_utility import open_in_chrome, close_windows
+from chrome_utility import open_in_chrome, close_windows
 from window_pos import window_positions
 
 def open_windows(urls):
