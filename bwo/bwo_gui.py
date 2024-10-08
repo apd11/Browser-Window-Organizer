@@ -23,7 +23,7 @@ def create_gui():
     exit_button = tk.Button(root, text="Exit", command=root.quit, font=("Arial", 12))
     exit_button.pack(pady=10)
 
-    # Call setup_hotkeys to register hotkeys
+    # Call create_hotkeys to register hotkeys
     create_hotkey(urls)
 
     root.protocol("WM_DELETE_WINDOW", root.quit)  # Ensure proper exit
