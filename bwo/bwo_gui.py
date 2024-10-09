@@ -1,8 +1,9 @@
 #make sure to wipe memory each time hotkey is pressed
 import tkinter as tk
 from tkinter import messagebox
-from hotkey_setup import create_hotkey  
+from hotkey_setup import create_hotkey, rm_hotkey  
 
+current_hotkey = None
 # make all urls start with https://www.
 def format_url(url):
     if not url.startswith("https://"):
@@ -13,9 +14,16 @@ def format_url(url):
 
 #open inputted urls with hotkeys
 def open_with_hotkey():
+    global current_hotkey
+
+    if current_hotkey: #remove current hotkey
+        rm_hotkey()
+
     urls = [format_url(url_entry1.get()),format_url(url_entry2.get()),format_url(url_entry3.get())]
 
     create_hotkey(urls) # use hot keys to open entered urls
+
+    current_hotkey = True
 
 def create_gui():
     root = tk.Tk()
