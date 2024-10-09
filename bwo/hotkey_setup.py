@@ -12,6 +12,10 @@ def create_hotkey(urls):
     keyboard.add_hotkey('ctrl+q', lambda: open_windows(urls))
     keyboard.add_hotkey('ctrl+shift+q', close_windows)
 
+def rm_hotkey(): #remove hotkey 
+    keyboard.remove_hotkey('ctrl+q')
+    keyboard.remove_hotkey('ctrl+shift+q')
+
 def setup_hotkeys(urls):
     # Start the hotkey listener in a separate thread
     listener_thread = threading.Thread(target=create_hotkey, args=(urls,), daemon=True)
