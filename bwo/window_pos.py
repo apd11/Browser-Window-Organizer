@@ -25,6 +25,16 @@ def window_positions():
         (long_w_width, small_w_height)
     ]
 
+    sizes = [
+        (long_w_width, long_w_height),
+        (small_w_width, small_w_height),
+        (small_w_width, small_w_height)
+    ]
+
+    for i, window in enumerate(windows[:3]):
+        window.moveTo(position[i][0],position[i][1])
+        window.resizeTo(sizes[i][0], sizes[i][1])
+    '''
     windows[0].moveTo(position[0][0], position[0][1])  # Left window
     windows[0].resizeTo(long_w_width, long_w_height)
     
@@ -33,3 +43,4 @@ def window_positions():
     
     windows[2].moveTo(position[2][0], position[2][1])  # Bottom right window
     windows[2].resizeTo(small_w_width, small_w_height)
+'''
