@@ -19,7 +19,7 @@ def open_with_hotkey():
     if current_hotkey: #remove current hotkey
         rm_hotkey()
 
-    urls = [format_url(url_entry3.get()),format_url(url_entry1.get()),format_url(url_entry2.get())]
+    urls = [format_url(url_entry3.get()),format_url(url_entry2.get()),format_url(url_entry1.get())]
 
     create_hotkey(urls) # use hot keys to open entered urls
 
@@ -79,9 +79,10 @@ def create_gui():
 def show_instructions():
     instructions = (
         "Instructions:\n\n"
-        "1. Enter URLS in text field.\n "
-        "2. Press Ctrl + Q to open the browser windows.\n"
-        "3. Press Ctrl + Shift + Q to close all browser windows."
+        "1. Enter URLS in text field.\n"
+        "2. Press Activate Hotkeys button\n"
+        "3. Press Ctrl + Q to open the browser windows.\n"
+        "4. Press Ctrl + Shift + Q to close all browser windows."
     )
     messagebox.showinfo("Instructions", instructions)
 
