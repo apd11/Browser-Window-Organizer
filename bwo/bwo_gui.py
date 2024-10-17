@@ -1,7 +1,6 @@
-#make sure to wipe memory each time hotkey is pressed
 import tkinter as tk
 from tkinter import messagebox
-from hotkey_setup import create_hotkey, rm_hotkey  
+from hotkey_setup import create_hotkey, rm_hotkey 
 
 current_hotkey = None
 # make all urls start with https://www.
