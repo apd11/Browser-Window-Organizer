@@ -111,12 +111,18 @@ def create_gui():
 
 def show_instructions():
     instructions = (
-        "Instructions:\n\n"
-        "1. Enter URLS in text field.\n"
-        "2. Press Press Open All In Google to open 3 windows in google.com\n"
-        "3. Press Open Custom URLS button\n"
-        "4. Press Ctrl + Q to open the browser windows.\n"
-        "5. Press Ctrl + Shift + Q to close all browser windows."
+        " Instructions:\n\n"
+        "\n"
+        "Open All Windows in Google.com:\n"
+        "1. Press Open Google in All Windows to open 3 windows in google.com\n"
+        "\n"
+        "Using Custom URLS:\n"
+        "1. Type in 3 URLS (ex. flightaware.com)\n"
+        "2. Press open custom URLS button\n"
+        "\n"
+        "Hotkeys Usage:\n"
+        "1. Press Ctrl + Q to open the browser windows.\n"
+        "2. Press Ctrl + Shift + Q to close all browser windows."
     )
     messagebox.showinfo("Instructions", instructions)
 
