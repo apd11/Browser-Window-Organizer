@@ -22,7 +22,3 @@ def setup_hotkeys(urls):
     listener_thread.start()
 
     keyboard.wait()
-    '''
-    while True:
-        time.sleep(1)
-        '''
