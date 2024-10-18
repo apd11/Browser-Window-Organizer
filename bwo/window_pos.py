@@ -4,7 +4,7 @@ import time
 
 
 def window_positions():
-    time.sleep(0.6) 
+    time.sleep(1) 
 
     windows = gw.getWindowsWithTitle("Google Chrome")
 
