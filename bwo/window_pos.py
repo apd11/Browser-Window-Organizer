@@ -32,6 +32,10 @@ def window_positions():
     ]
 
     for i, window in enumerate(windows[:3]):
+        if window.isMaximized: #check if window is maximized
+            window.restore() #put window in normal size 
+        
+        #resize and position the three windows
         window.moveTo(position[i][0],position[i][1])
         window.resizeTo(sizes[i][0], sizes[i][1])
     
