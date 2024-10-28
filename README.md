@@ -18,6 +18,7 @@ This Project automates the opening, closing, and repositioning of brower windows
 - **Custom GUI**
   - Simplifies usage for users
   - A section for the user to input three URLS (labeled for where each URL will be positioned)
+  - Button that allows users to open all three windows in google.com
   - Includes a button to activate hotkeys that will open and close browser windows
   - Includes instructions on how to use application
   - Exit button for users to close application
